@@ -1,7 +1,9 @@
 import 'package:ceresmobile/ui/dashboard.dart';
+import 'package:ceresmobile/ui/employees.dart';
+import 'package:ceresmobile/ui/widgets/receipts.dart';
 import 'package:flutter/material.dart';
-
 import 'dashbody.dart';
+import 'widgets/charts.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({
@@ -15,12 +17,12 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
 
-  static const List<Widget> _widgetOptions = <Widget>[
-    Dashbody(),
-    Dashboard(),
-    Dashboard(),
-    Dashboard(),
-    Dashboard(),
+  static final List<Widget> _widgetOptions = <Widget>[
+    const Dashbody(),
+    const ReceiptMenu(),
+    const Employees(),
+    const Dashboard(),
+    const Dashboard(),
   ];
 
   @override
