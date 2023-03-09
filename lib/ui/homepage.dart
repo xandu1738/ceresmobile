@@ -1,9 +1,11 @@
 import 'package:ceresmobile/ui/dashboard.dart';
 import 'package:ceresmobile/ui/employees.dart';
+import 'package:ceresmobile/ui/settings.dart';
+import 'package:ceresmobile/ui/widgets/charts.dart';
 import 'package:ceresmobile/ui/widgets/receipts.dart';
 import 'package:flutter/material.dart';
 import 'dashbody.dart';
-import 'widgets/charts.dart';
+// import 'widgets/charts.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({
@@ -21,8 +23,8 @@ class _HomePageState extends State<HomePage> {
     const Dashbody(),
     const ReceiptMenu(),
     const Employees(),
-    const Dashboard(),
-    const Dashboard(),
+    Charts(),
+    const SettingsPage(),
   ];
 
   @override

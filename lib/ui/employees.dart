@@ -7,23 +7,26 @@ class Employees extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(15.0),
-      child: ListView(
-        children: const [
-          UserProfileCard(
-            name: 'John Doe',
-            email: 'johndoe@example.com',
-            profileImageUrl:
-                'https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947__340.jpg',
-          ),
-          UserProfileCard(
-            name: 'Jane Doe',
-            email: 'johndoe@example.com',
-            profileImageUrl:
-                'https://cdn.pixabay.com/photo/2017/01/27/16/09/people-2013447__340.jpg',
-          ),
-        ],
+    return Scaffold(
+      appBar: AppBar(),
+      body: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: ListView(
+          children: const [
+            UserProfileCard(
+              name: 'John Doe',
+              email: 'johndoe@example.com',
+              profileImageUrl:
+                  'https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947__340.jpg',
+            ),
+            UserProfileCard(
+              name: 'Jane Doe',
+              email: 'johndoe@example.com',
+              profileImageUrl:
+                  'https://cdn.pixabay.com/photo/2017/01/27/16/09/people-2013447__340.jpg',
+            ),
+          ],
+        ),
       ),
     );
   }
